@@ -20,7 +20,7 @@ int main(){
         printf("\nPress 3 to quit\n");
         scanf("%d", &input);
         srand(time(0));
-        int random = (rand(%max)+1);
+        int random = (rand()%max)+1;
 
         //create option for 1
         if(input==1){
@@ -32,12 +32,12 @@ int main(){
             } else {
                 w = u- '0';
                 if(w==random) {
-                    printf("You have won!"\n);
-                } else if(n>random) {
-                    printf{"Your guess was higher."}
+                    printf("You have won!\n");
+                } else if(w>random) {
+                    printf("Your guess was higher.");
                     goto a;
                 } else {
-                    printf("Your guess was lower.")
+                    printf("Your guess was lower.");
                     goto a;
                 }
             }
@@ -47,7 +47,7 @@ int main(){
 
             b:printf("\nYou can set Maximum to 100");
             printf("\nEnter new value: ");
-            scanf("%d", $max);
+            scanf("%d", &max);
             if(max>0 && max<=100){
                 printf("Value has been set.\n");
             } else {
@@ -55,12 +55,8 @@ int main(){
                 goto b;
             }
         }
-
-
-
-        //create option for 3
-
     }   
-
+    //create option for 3
+    printf("\nGame is over.\n");
 
 }
