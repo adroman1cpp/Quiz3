@@ -2,27 +2,33 @@
 
 int main() {
 
-    //declare variables
-    double salad = 9.95;
-    double soup = 4.55;
-    double sandwich = 13.25;
-    double pizza = 22.35;
-    float tax;
-    float tip;
+    //declare variables and arrays
+    double tax;
+    double tip;
+
+    double price[4] = {9.95, 4.55, 13.25, 22.35};
     
     //create random to choose items
-
-
+    int r = rand() % 4;
+    double chosenPrice = price[r];
+    char chosenItem = item[r];
 
 
     //ask the user for input
+    printf("Enter tax percent: ");
+    scanf("%lf", &tax);
+    printf("Enter tip percent: ");
+    scanf("%lf", &tip);
 
+    //do the calculations and print
+    printf("Restaurant Bill-");
+    printf("Cost: $%.2lf\n", chosenPrice);
+    printf("Tax: $%.2lf\n",(tax/100)*chosenPrice);
+    printf("Tip: $%.2lf\n",(tip/100)*chosenPrice);
 
-
-
-    //do the calculations and prdouble
-
-
+    double total = chosenPrice + (tax/100)*chosenPrice + (tip/100)*chosenPrice;
+    printf("Total: %.2lf", total);
+    return 0;
 
 
 
