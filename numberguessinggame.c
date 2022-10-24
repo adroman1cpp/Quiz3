@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
+#include<stdbool.h>
 
 int main(){
 
@@ -9,7 +10,6 @@ int main(){
     char u = 'a';
     int w;
     int max = 100;
-    int error = 0;
 
 
     //ask user for input
@@ -18,6 +18,7 @@ int main(){
         printf("\nPress 1 to play a game");
         printf("\nPress 2 to change max number");
         printf("\nPress 3 to quit\n");
+        printf("Enter your option: ");
         scanf("%d", &input);
         srand(time(0));
         int random = (rand()%max)+1;
@@ -25,22 +26,23 @@ int main(){
         //create option for 1
         if(input==1){
 
-            a:printf("\nEnter your guess: ");
+            printf("Enter your guess: \n");
             scanf("%c",&u);
             if(u=='u'){
                 continue;
             } else {
-                w = u- '0';
+                w = u - '0';
                 if(w==random) {
                     printf("You have won!\n");
                 } else if(w>random) {
-                    printf("Your guess was higher.");
-                    goto a;
-                } else {
-                    printf("Your guess was lower.");
-                    goto a;
+                    printf("Your guess was higher.\n");
+                    
+                } else if (w<random){
+                    printf("Your guess was lower.\n");
+                    
                 }
             }
+            
         }
         //create option for 2
         else if(input==2) {
