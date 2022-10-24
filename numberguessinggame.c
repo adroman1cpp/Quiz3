@@ -11,10 +11,13 @@ int main(){
 
 
     //ask user for input
-
+    while(input !=3){
 
     //create option for 1
-
+    printf("\nPress 1 to play a game");
+    printf("\nPress 2 to change max number");
+    printf("\nPress 3 to quit\n");
+    scanf("%d", &input);
 
 
     //create option for 2
@@ -22,6 +25,8 @@ int main(){
 
 
     //create option for 3
+
+    }   
 
 
 }
