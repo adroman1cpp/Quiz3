@@ -3,10 +3,10 @@
 int main() {
 
     //declare variables
-    int salad = 9.95;
-    int soup = 4.55;
-    int sandwich = 13.25;
-    int pizza = 22.35;
+    double salad = 9.95;
+    double soup = 4.55;
+    double sandwich = 13.25;
+    double pizza = 22.35;
     float tax;
     float tip;
     
@@ -20,7 +20,7 @@ int main() {
 
 
 
-    //do the calculations and print
+    //do the calculations and prdouble
 
 
 
