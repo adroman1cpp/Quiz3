@@ -22,7 +22,7 @@ int main() {
     scanf("%lf", &tip);
 
     //do the calculations and print
-    printf("Restaurant Bill-");
+    printf("\nRestaurant Bill-\n");
     printf("Cost: $%.2lf\n", chosenPrice);
     printf("Tax: $%.2lf\n",(tax/100)*chosenPrice);
     printf("Tip: $%.2lf\n",(tip/100)*chosenPrice);
@@ -30,7 +30,4 @@ int main() {
     double total = chosenPrice + (tax/100)*chosenPrice + (tip/100)*chosenPrice;
     printf("Total: %.2lf", total);
     return 0;
-
-
-
 }
