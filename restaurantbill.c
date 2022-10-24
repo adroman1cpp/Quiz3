@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
 
@@ -11,7 +12,7 @@ int main() {
     //create random to choose items
     int r = rand() % 4;
     double chosenPrice = price[r];
-    char chosenItem = item[r];
+    char chosenItem = price[r];
 
 
     //ask the user for input
