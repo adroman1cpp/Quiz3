@@ -9,7 +9,7 @@ int main(){
     int input = 0;
     char u = 'a';
     int w;
-    int max = 100;
+    int max = 10;
 
 
     //ask user for input
